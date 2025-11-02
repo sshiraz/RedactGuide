@@ -6,9 +6,7 @@ export default function Footer() {
           <p className="text-base text-gray-600">
             Built with privacy in mind. No tracking. No analytics. No data collection.
           </p>
-          <p className="mt-2 text-sm text-gray-500">
-            RedactGuide - Local-Only Document Redaction
-          </p>
+          <p className="mt-2 text-sm text-gray-500">RedactGuide - Local-Only Document Redaction</p>
         </div>
       </div>
     </footer>

@@ -18,9 +18,7 @@ export default function Header() {
             <Link
               to="/"
               className={`text-sm font-medium transition-colors ${
-                location.pathname === '/'
-                  ? 'text-blue-600'
-                  : 'text-gray-700 hover:text-gray-900'
+                location.pathname === '/' ? 'text-blue-600' : 'text-gray-700 hover:text-gray-900'
               }`}
             >
               Home
