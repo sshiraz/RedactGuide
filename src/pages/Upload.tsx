@@ -3,7 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist';
 import UploadZone from '../features/import/UploadZone';
 import FilePreview from '../features/import/FilePreview';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
 interface FileData {
   file: File;
