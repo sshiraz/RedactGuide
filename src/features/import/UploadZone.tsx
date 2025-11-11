@@ -84,13 +84,13 @@ export default function UploadZone({ onFileSelect }: UploadZoneProps) {
 
   return (
     <div className="w-full max-w-2xl">
-      <div
+      <label
         onDragEnter={handleDragEnter}
         onDragLeave={handleDragLeave}
         onDragOver={handleDragOver}
         onDrop={handleDrop}
         className={`
-          relative rounded-lg border-2 border-dashed p-12 text-center transition-all
+          block cursor-pointer rounded-lg border-2 border-dashed p-12 text-center transition-all
           ${
             isDragging
               ? 'border-primary-500 bg-primary-50'
@@ -103,11 +103,11 @@ export default function UploadZone({ onFileSelect }: UploadZoneProps) {
           type="file"
           accept="application/pdf"
           onChange={handleFileInput}
-          className="absolute inset-0 cursor-pointer opacity-0"
+          className="sr-only"
           aria-label="Upload PDF file"
         />
 
-        <div className="pointer-events-none">
+        <div>
           <DocumentArrowUpIcon
             className={`mx-auto h-16 w-16 ${
               error ? 'text-error-400' : isDragging ? 'text-primary-500' : 'text-neutral-400'
@@ -129,7 +129,7 @@ export default function UploadZone({ onFileSelect }: UploadZoneProps) {
             </>
           )}
         </div>
-      </div>
+      </label>
     </div>
   );
 }
