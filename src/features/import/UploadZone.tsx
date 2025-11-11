@@ -123,9 +123,14 @@ export default function UploadZone({ onFileSelect }: UploadZoneProps) {
           ) : (
             <>
               <p className="mt-2 text-sm text-neutral-600">
-                Drag and drop your PDF here, or click to browse
+                Drag and drop your PDF here
               </p>
-              <p className="mt-1 text-xs text-neutral-500">Maximum file size: 50MB</p>
+              <div className="mt-4">
+                <span className="inline-flex items-center rounded-md bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-500 transition-colors">
+                  Choose File
+                </span>
+              </div>
+              <p className="mt-3 text-xs text-neutral-500">Maximum file size: 50MB</p>
             </>
           )}
         </div>
